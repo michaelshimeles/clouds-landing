@@ -18,7 +18,10 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
 
 body {
   font-family: var(--font-sans);
@@ -725,7 +728,7 @@ img, svg { display: block; }
   gap: 28px;
   padding: var(--spacing-section) 80px;
   text-align: center;
-  background-image: linear-gradient(180deg, #FFFFFF 0%, #E8F1FA 45%, #B8D4EC 100%);
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #E8F1FA 55%, #D6E8F6 100%);
 }
 .final-cta h2 {
   font-size: 48px;
@@ -799,6 +802,18 @@ img, svg { display: block; }
   padding: 8px;
 }
 
+
+.nav.is-open .nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  padding: 12px 0 8px;
+  order: 3;
+}
+.menu-toggle svg { display: block; }
+
 /* ——— Responsive ——— */
 @media (max-width: 1100px) {
   .mock-preview { display: none; }
@@ -812,7 +827,9 @@ img, svg { display: block; }
   .hero-band, .section-pad, .final-cta, .footer { padding-left: 24px; padding-right: 24px; }
   .section-pad { padding-top: 72px; padding-bottom: 72px; }
   .final-cta { padding-top: 80px; padding-bottom: 80px; }
+  .nav { flex-wrap: wrap; gap: 8px; }
   .nav-links { display: none; }
+  .nav.is-open .nav-links { display: flex; }
   .menu-toggle { display: block; }
   .hero-copy h1 { font-size: 40px; line-height: 46px; }
   .section-head h2, .memory-copy h2 { font-size: 28px; line-height: 36px; }
@@ -820,11 +837,17 @@ img, svg { display: block; }
   .vision-cards { flex-direction: column; }
   .memory { flex-direction: column; gap: 32px; align-items: stretch; }
   .memory-copy, .memory-panel { max-width: none; }
-  .mock-body { height: auto; flex-direction: column; }
-  .mock-side { width: 100%; border-right: none; border-bottom: 1px solid var(--color-pastel); }
-  .mock-center { border-right: none; }
+  .mock-side { width: 140px; }
   .footer-cols { flex-wrap: wrap; gap: 32px; }
   .footer-col { flex: 1 1 40%; }
   .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
   .int-tile { width: calc(33.33% - 12px); min-width: 100px; }
+}
+
+/* Stack product mock panes only on small phones */
+@media (max-width: 700px) {
+  .mock-body { height: auto; flex-direction: column; }
+  .mock-side { width: 100%; border-right: none; border-bottom: 1px solid var(--color-pastel); }
+  .mock-center { border-right: none; }
+  .mock-preview { display: none; }
 }
