@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clouds — The intelligent AI assistant that is a browser</title>
+  <meta name="description" content="Clouds turns every tab into a workspace for people and agents — browse, research, and ship work without leaving the sky." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <!-- Nav + Hero -->
+    <header class="hero-band" id="product">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#">
+          <div class="brand-mark" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 8.5C2 6 4 4.5 7 4.5C10 4.5 12 6 12 8.5C12 10.5 10.5 12 8.5 12H5.5C3.5 12 2 10.5 2 8.5Z" fill="#0B0D10" opacity="0.85"/>
+              <circle cx="4.5" cy="5" r="1.8" fill="#0B0D10" opacity="0.5"/>
+              <circle cx="9" cy="4.2" r="2.2" fill="#0B0D10" opacity="0.4"/>
+            </svg>
+          </div>
+          <span class="brand-name">Clouds</span>
+        </a>
+        <div class="nav-links">
+          <a href="#product">Product</a>
+          <a href="#use-cases">Use cases</a>
+          <a href="#security">Security</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <a class="btn-pill btn-pill--sm" href="#">Download</a>
+      </nav>
+
+      <div class="hero-copy">
+        <div class="label">Introducing Clouds</div>
+        <h1>The intelligent AI assistant that is a browser</h1>
+        <p>Clouds turns every tab into a workspace for people and agents — browse, research, and ship work without leaving the sky.</p>
+        <a class="btn-pill" href="#">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M8 2v8M5 7l3 3 3-3" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 12h10" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          Download for macOS
+        </a>
+      </div>
+
+      <!-- 3-pane product mock -->
+      <div class="mock" aria-hidden="true">
+        <div class="mock-chrome">
+          <span class="dot dot--r"></span>
+          <span class="dot dot--y"></span>
+          <span class="dot dot--g"></span>
+          <div class="mock-url"><span>clouds.app / agent</span></div>
+        </div>
+        <div class="mock-body">
+          <aside class="mock-side">
+            <div class="mock-side-label">WORKSPACE</div>
+            <div class="mock-nav-item is-active">
+              <svg width="14" height="14" viewBox="0 0 14 14"><rect x="2" y="2" width="4" height="4" rx="1" fill="#0B0D10"/><rect x="8" y="2" width="4" height="4" rx="1" fill="#0B0D10" opacity="0.4"/><rect x="2" y="8" width="4" height="4" rx="1" fill="#0B0D10" opacity="0.4"/><rect x="8" y="8" width="4" height="4" rx="1" fill="#0B0D10" opacity="0.4"/></svg>
+              Files
+            </div>
+            <div class="mock-nav-item">
+              <svg width="14" height="14" viewBox="0 0 14 14"><rect x="2" y="3" width="10" height="8" rx="1.5" fill="none" stroke="#5C6B7A" stroke-width="1.2"/><path d="M2 5l5 3.5L12 5" fill="none" stroke="#5C6B7A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Inbox
+            </div>
+            <div class="mock-nav-item">
+              <svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5" fill="none" stroke="#5C6B7A" stroke-width="1.2"/><circle cx="7" cy="7" r="2" fill="#A8C8E8"/></svg>
+              Agent
+            </div>
+            <div class="mock-divider"></div>
+            <div class="mock-file"><span class="file-dot" style="background:#A8C8E8"></span>Q3 forecast.xlsx</div>
+            <div class="mock-file"><span class="file-dot" style="background:#C8D9E8"></span>Brief — Nova.md</div>
+          </aside>
+          <div class="mock-center">
+            <div class="mock-center-head">
+              <h3>Agent session</h3>
+              <span class="live">LIVE</span>
+            </div>
+            <div class="bubble-user">Pull competitor pricing from the open tabs and draft a comparison table.</div>
+            <div class="bubble-agent">
+              On it — scanning three tabs and building the matrix.
+              <div class="task-list">
+                <div class="task">
+                  <span class="check"><svg width="8" height="8" viewBox="0 0 8 8"><path d="M1.5 4l2 2 3-3.5" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+                  Open pricing pages
+                </div>
+                <div class="task">
+                  <span class="check"><svg width="8" height="8" viewBox="0 0 8 8"><path d="M1.5 4l2 2 3-3.5" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+                  Extract plan tiers
+                </div>
+                <div class="task is-current">
+                  <span class="check check--pending"></span>
+                  Draft comparison table
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="mock-preview">
+            <div class="mock-preview-label">PREVIEW</div>
+            <div class="preview-card">
+              <h4>Pricing matrix</h4>
+              <div class="bar"></div>
+              <div class="bar" style="width:72%"></div>
+              <div class="bar bar--ice" style="width:88%"></div>
+            </div>
+            <div class="price-card">
+              <div class="price-row"><span>Starter</span><span>$29</span></div>
+              <div class="price-row"><span>Growth</span><span>$79</span></div>
+              <div class="price-row"><span>Scale</span><span>$149</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <!-- Vision -->
+    <section class="vision section-pad">
+      <div class="section-head">
+        <div class="label">Why Clouds</div>
+        <h2>Browsers stayed stuck in the past. Clouds was rebuilt for people and agents.</h2>
+      </div>
+      <div class="vision-cards">
+        <div class="v-card">
+          <div class="label">The Rest</div>
+          <h3>Tabs, bookmarks, and hope</h3>
+          <p>Traditional browsers treat the web as static pages. Agents are bolted on, context is lost, and work lives elsewhere.</p>
+        </div>
+        <div class="v-card v-card--clouds">
+          <div class="label">Clouds</div>
+          <h3>A browser built for agency</h3>
+          <p>Every surface is shared between you and your agents — memory, files, and actions stay in one continuous sky.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations -->
+    <section class="integrations section-pad">
+      <div class="section-head">
+        <div class="label">Integrations</div>
+        <h2>Anything you do in a browser, Clouds can do for you</h2>
+      </div>
+      <div class="int-grid">
+        <div class="int-tile">
+          <div class="int-icon" style="background:#FCE8E6;color:#C5221F">Gm</div>
+          <span>Gmail</span>
+        </div>
+        <div class="int-tile">
+          <div class="int-icon" style="background:#EDE4F8;color:#611F69">Sl</div>
+          <span>Slack</span>
+        </div>
+        <div class="int-tile">
+          <div class="int-icon" style="background:#F0F0F0;color:#0B0D10">No</div>
+          <span>Notion</span>
+        </div>
+        <div class="int-tile">
+          <div class="int-icon" style="background:#E8ECF0;color:#24292F">Gh</div>
+          <span>GitHub</span>
+        </div>
+        <div class="int-tile">
+          <div class="int-icon" style="background:#E0EDF8;color:#0A66C2">In</div>
+          <span>LinkedIn</span>
+        </div>
+        <div class="int-tile">
+          <div class="int-icon" style="background:#E8DEFA;color:#635BFF">St</div>
+          <span>Stripe</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use cases -->
+    <section class="use-cases section-pad" id="use-cases">
+      <div class="section-head" style="max-width:640px">
+        <div class="label">Use Cases</div>
+        <h2>Work that used to take hours, now takes a prompt</h2>
+      </div>
+      <div class="uc-grid">
+        <article class="uc-card uc-card--finance">
+          <div class="label">Finance</div>
+          <h3>Reconcile last month’s expenses across Stripe and the ledger</h3>
+          <div class="uc-mock">
+            <div class="uc-mock-row"><span>Stripe payout</span><span>$12,480</span></div>
+            <div class="uc-bar uc-bar--full"></div>
+            <div class="uc-bar uc-bar--partial"></div>
+          </div>
+        </article>
+        <article class="uc-card uc-card--meetings">
+          <div class="label">Meetings</div>
+          <h3>Summarize today’s standups and push action items to Slack</h3>
+          <div class="uc-mock">
+            <div class="uc-mock-row"><span>3 action items</span><span>Ready</span></div>
+            <div class="uc-bar uc-bar--full"></div>
+            <div class="uc-bar uc-bar--partial"></div>
+          </div>
+        </article>
+        <article class="uc-card uc-card--reports">
+          <div class="label">Reports</div>
+          <h3>Draft the weekly growth report from analytics tabs</h3>
+          <div class="uc-mock">
+            <div class="uc-mock-row"><span>Draft v2</span><span>84%</span></div>
+            <div class="uc-bar uc-bar--full"></div>
+            <div class="uc-bar uc-bar--partial"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Benchmark -->
+    <section class="benchmark section-pad" id="pricing">
+      <div class="section-head">
+        <div class="label">Benchmark</div>
+        <h2>The 90%+ browser agent</h2>
+        <p>Clouds leads on agentic browsing tasks — measured against fictional peers on a shared eval suite.</p>
+      </div>
+      <div class="bench-list">
+        <div class="bench-row">
+          <div class="bench-meta bench-meta--top"><span>Clouds</span><span>94%</span></div>
+          <div class="bench-track"><div class="bench-fill bench-fill--ink"></div></div>
+        </div>
+        <div class="bench-row">
+          <div class="bench-meta bench-meta--muted"><span>Orbit Agent</span><span>71%</span></div>
+          <div class="bench-track"><div class="bench-fill bench-fill--a"></div></div>
+        </div>
+        <div class="bench-row">
+          <div class="bench-meta bench-meta--muted"><span>BrowsePilot</span><span>63%</span></div>
+          <div class="bench-track"><div class="bench-fill bench-fill--b"></div></div>
+        </div>
+        <div class="bench-row">
+          <div class="bench-meta bench-meta--muted"><span>TabForge</span><span>52%</span></div>
+          <div class="bench-track"><div class="bench-fill bench-fill--c"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memory -->
+    <section class="memory section-pad">
+      <div class="memory-copy">
+        <div class="label">Memory</div>
+        <h2>Memory that knows what you’re working on</h2>
+        <p>Clouds keeps thread, file, and tab context so agents pick up where you left off — no re-explaining every morning.</p>
+      </div>
+      <div class="memory-panel" aria-hidden="true">
+        <div class="memory-panel-label">CONTEXT HISTORY</div>
+        <div class="mem-item">
+          <div class="mem-icon" style="background:#E8F1FA"></div>
+          <div>
+            <h4>Nova pricing research</h4>
+            <p>Updated 12 min ago · 6 tabs</p>
+          </div>
+        </div>
+        <div class="mem-item">
+          <div class="mem-icon" style="background:#F7ECEF"></div>
+          <div>
+            <h4>Q3 forecast workbook</h4>
+            <p>Yesterday · spreadsheet + notes</p>
+          </div>
+        </div>
+        <div class="mem-item">
+          <div class="mem-icon" style="background:#E8F5EF"></div>
+          <div>
+            <h4>Customer onboarding flow</h4>
+            <p>Mon · 4 agent runs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Security -->
+    <section class="security section-pad" id="security">
+      <div class="section-head">
+        <div class="label">Security</div>
+        <h2>A password manager built for agents</h2>
+        <p>Credentials stay vaulted. Agents request scoped access — you approve, revoke, and audit every unlock.</p>
+      </div>
+      <div class="sec-grid">
+        <div class="sec-card">
+          <div class="sec-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="3" y="6" width="10" height="7" rx="1.5" stroke="#0B0D10" stroke-width="1.3"/><path d="M5.5 6V4.5a2.5 2.5 0 015 0V6" stroke="#0B0D10" stroke-width="1.3"/></svg>
+          </div>
+          <h3>Local by default</h3>
+          <p>Vault lives on your machine. Sync is opt-in.</p>
+        </div>
+        <div class="sec-card">
+          <div class="sec-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2l5 2v4c0 3.2-2.1 5.4-5 6-2.9-.6-5-2.8-5-6V4l5-2z" stroke="#0B0D10" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Encryption</h3>
+          <p>Keys sealed at rest. Agents never see raw secrets.</p>
+        </div>
+        <div class="sec-card">
+          <div class="sec-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2.5" y="2.5" width="11" height="11" rx="2" stroke="#0B0D10" stroke-width="1.3"/><path d="M5.5 8h5M8 5.5v5" stroke="#0B0D10" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Sandbox</h3>
+          <p>Each agent run is isolated with scoped permissions.</p>
+        </div>
+        <div class="sec-card">
+          <div class="sec-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="6" cy="8" r="2.5" stroke="#0B0D10" stroke-width="1.3"/><path d="M8.2 8H13M11.5 6.5L13 8l-1.5 1.5" stroke="#0B0D10" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Bring your own automation</h3>
+          <p>Wire your tools. Clouds stays the trusted layer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+      <div class="label">Get Started</div>
+      <h2>Crafted for both human and agent</h2>
+      <p>Download Clouds and give your next project a sky worth sharing.</p>
+      <a class="btn-pill" href="#">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M8 2v8M5 7l3 3 3-3" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3 12h10" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Download for macOS
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>PLATFORM</h4>
+          <a href="#">Download</a>
+          <a href="#">Changelog</a>
+          <a href="#">Status</a>
+        </div>
+        <div class="footer-col">
+          <h4>USE CASES</h4>
+          <a href="#use-cases">Finance</a>
+          <a href="#use-cases">Meetings</a>
+          <a href="#use-cases">Reports</a>
+        </div>
+        <div class="footer-col">
+          <h4>RESOURCES</h4>
+          <a href="#">Docs</a>
+          <a href="#">Guides</a>
+          <a href="#">Community</a>
+        </div>
+        <div class="footer-col">
+          <h4>COMPANY</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="brand-name">Clouds</span>
+        <p>Privacy by design. Local vault. You control every agent unlock.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
